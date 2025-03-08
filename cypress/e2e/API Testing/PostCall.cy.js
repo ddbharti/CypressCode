@@ -1,4 +1,4 @@
-import payload from '../cypress/config/payload.json'
+import payload from '../../config/payload.json'
 
 describe('Post Call - Cypress',()=>{
 
@@ -84,7 +84,7 @@ describe('Post Call - Cypress',()=>{
         })
     })
 
-    it('Post call --Fixture',()=>{
+    it.only('Post call --Fixture',()=>{
 
         cy.fixture('PostUser.json').then((responseobject)=>{
 
@@ -111,7 +111,7 @@ describe('Post Call - Cypress',()=>{
         
     })
 
-    it.only('Post call --Config',()=>{
+    it('Post call --Config',()=>{
 
       
 
